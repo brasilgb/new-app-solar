@@ -17,7 +17,7 @@ const HistoryButton = ({ icon, label, colorText, url, bgButton }: HistoryButtonP
             onPress={() => router.push(url)}
             className={`w-[109px] h-[109px] ${bgButton} rounded-lg items-center justify-around shadow shadow-black`}
             >
-            <Text className={`text-sm ${colorText} font-medium`}>{label}</Text>
+            <Text className={`text-sm ${colorText} font-RobotoRegular`}>{label}</Text>
             {icon}
         </TouchableOpacity>
     )
