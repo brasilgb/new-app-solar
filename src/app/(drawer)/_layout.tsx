@@ -5,7 +5,7 @@ import { BanknoteArrowDownIcon, HandCoinsIcon, HandshakeIcon, HistoryIcon, HomeI
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { DrawerContentScrollView, DrawerItem, DrawerItemList } from '@react-navigation/drawer';
 import { View, Text } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import CustomHeader from '@/components/CustomHeader';
 // import CustomDrawerContent from '@/components/CustomDrawerContent';
 const CustomDrawerContent = (props: any) => {

@@ -18,6 +18,7 @@ const buttonVariants = cva(
         default: "h-14 px-4",
         sm: "h-8 px-2",
         lg: "h-12 px-8",
+        icon: "size-9",
       },
     },
     defaultVariants: {
@@ -40,6 +41,7 @@ const buttonTextVariants = cva("text-center font-medium", {
       default: "text-lg",
       sm: "text-sm",
       lg: "text-xl",
+      icon: "size-9",
     },
   },
   defaultVariants: {
@@ -51,7 +53,7 @@ const buttonTextVariants = cva("text-center font-medium", {
 interface ButtonProps
   extends React.ComponentPropsWithoutRef<typeof TouchableOpacity>,
     VariantProps<typeof buttonVariants> {
-  label: string
+  label: any
   labelClasses?: string
 }
 function Button({

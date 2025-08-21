@@ -101,6 +101,9 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='enderecoCliente'
               />
+              {errors.enderecoCliente && (
+                <Text className='text-solar-red-primary'>{errors.enderecoCliente?.message}</Text>
+              )}
 
               <Controller
                 control={control}
@@ -118,8 +121,8 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='cepCliente'
               />
-              {errors.nomeCliente && (
-                <Text className='text-solar-red-primary'>{errors.nomeCliente?.message}</Text>
+              {errors.cepCliente && (
+                <Text className='text-solar-red-primary'>{errors.cepCliente?.message}</Text>
               )}
 
               <Controller
@@ -138,6 +141,9 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='ufCliente'
               />
+              {errors.ufCliente && (
+                <Text className='text-solar-red-primary'>{errors.ufCliente?.message}</Text>
+              )}
 
               <Controller
                 control={control}
@@ -155,6 +161,9 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='cidadeCliente'
               />
+              {errors.cidadeCliente && (
+                <Text className='text-solar-red-primary'>{errors.cidadeCliente?.message}</Text>
+              )}
 
               <Controller
                 control={control}
@@ -172,6 +181,9 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='celularCliente'
               />
+              {errors.celularCliente && (
+                <Text className='text-solar-red-primary'>{errors.celularCliente?.message}</Text>
+              )}
 
               <Controller
                 control={control}
@@ -189,6 +201,9 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 )}
                 name='emailCliente'
               />
+              {errors.emailCliente && (
+                <Text className='text-solar-red-primary'>{errors.emailCliente?.message}</Text>
+              )}
 
               <Controller
                 control={control}
@@ -208,6 +223,7 @@ const [ loading, setLoading ] = useState<boolean>(false);
                 name='nascimentoCliente'
               />
             </View>
+            
             <Button
               label={'Alterar'}
               variant={'secondary'}
